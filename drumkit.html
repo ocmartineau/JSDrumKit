@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <title>Drumkit</title>
+    </head>
+    <body>
+
+        <div class="key">
+            <div onclick="playSound()">A</div>
+            <audio id="sound" src="sounds/boom.wav"></audio>
+        </div>
+
+        <div class="key">
+            <div>S</div>
+        </div>
+
+        <div class="key">
+            <div>D</div>
+        </div>
+
+        <div class="key">
+            <div>F</div>
+        </div>
+
+        <div class="key">
+            <div>G</div>
+        </div>
+
+        <div class="key">
+            <div>H</div>
+        </div>
+
+        <div class="key">
+            <div>J</div>
+        </div>
+
+        <div class="key">
+            <div>K</div>
+        </div>
+
+        <div class="key">
+            <div>L</div>
+        </div>
+
+        
+        
+        <script>
+            function playSound() {
+                const sound = document.getElementById("sound");
+                sound.play();
+            }
+        </script>
+    </body>
+
+</html>
