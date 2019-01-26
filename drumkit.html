@@ -11,11 +11,12 @@
 
         <div class="key">
             <div onclick="playSound()">A</div>
-            <audio id="sound" src="sounds/boom.wav"></audio>
+            <audio class="drumSet" id="boomSound" src="sounds/boom.wav"></audio>
         </div>
 
         <div class="key">
-            <div>S</div>
+            <div onclick="playSound()">S</div>
+            <audio class="drumSet" id="clapSound" src="sounds/clap.wav"></audio>
         </div>
 
         <div class="key">
@@ -50,9 +51,15 @@
         
         <script>
             function playSound() {
-                const sound = document.getElementById("sound");
+                const sound = document.getElementsByClassName("drumSet");
                 sound.play();
             }
+
+            // function playSound() {
+            //     const sound = document.getElementById("clapSound");
+            //     sound.play();
+            // }
+
         </script>
     </body>
 
