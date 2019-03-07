@@ -5,54 +5,63 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
         <title>Drumkit</title>
     </head>
     <body>
 
-        <div class="key" onclick="playBoom()">
-            <div >A</div>
-            <audio class="drumSet" id="boomSound" src="sounds/boom.wav"></audio>
+        <div class="jumbotron-fluid">
+            <h1 class="display-4">Javascript Drum Set!</h1>
+            <div class="d-flex justify-content-center">
+                <div class="key" onclick="playBoom()">
+                    <div >A</div>
+                    <audio class="drumSet" id="boomSound" src="sounds/boom.wav"></audio>
+                </div>
+
+                <div class="key" onclick="playClap()">
+                    <div>S</div>
+                    <audio class="drumSet" id="clapSound" src="sounds/clap.wav"></audio>
+                </div>
+
+                <div class="key" onclick="playHiHat()">
+                    <div>D</div>
+                    <audio class="drumSet" id="hiHatSound" src="sounds/hihat.wav"></audio>
+                </div>
+
+                <div class="key" onclick="playKick()">
+                    <div>F</div>
+                    <audio class="drumSet" id="kickSound" src="sounds/kick.wav"></audio>
+                </div>
+
+                <div class="key" onclick="playOpenHat()">
+                    <div>G</div>
+                    <audio class="drumSet" id="openHatSound" src="sounds/openhat.wav"></audio>
+                </div>
+
+                <div class="key" onclick="playRide()">
+                    <div>H</div>
+                    <audio class="drumSet" id="rideSound" src="sounds/ride.wav"></audio>
+                </div>
+
+                <div class="key" onclick="playSnare()">
+                    <div>J</div>
+                    <audio class="drumSet" id="snareSound" src="sounds/snare.wav"></audio>
+                </div>
+
+                <div class="key" onclick="playTink()">
+                    <div>K</div>
+                    <audio class="drumSet" id="tinkSound" src="sounds/tink.wav"></audio>
+                </div>
+
+                <div class="key" onclick="playTom()">
+                    <div>L</div>
+                    <audio class="drumSet" id="tomSound" src="sounds/tom.wav"></audio>
+                </div>
+            </div>
         </div>
 
-        <div class="key" onclick="playClap()">
-            <div>S</div>
-            <audio class="drumSet" id="clapSound" src="sounds/clap.wav"></audio>
-        </div>
 
-        <div class="key" onclick="playHiHat()">
-            <div>D</div>
-            <audio class="drumSet" id="hiHatSound" src="sounds/hihat.wav"></audio>
-        </div>
-
-        <div class="key" onclick="playKick()">
-            <div>F</div>
-            <audio class="drumSet" id="kickSound" src="sounds/kick.wav"></audio>
-        </div>
-
-        <div class="key" onclick="playOpenHat()">
-            <div>G</div>
-            <audio class="drumSet" id="openHatSound" src="sounds/openhat.wav"></audio>
-        </div>
-
-        <div class="key" onclick="playRide()">
-            <div>H</div>
-            <audio class="drumSet" id="rideSound" src="sounds/ride.wav"></audio>
-        </div>
-
-        <div class="key" onclick="playSnare()">
-            <div>J</div>
-            <audio class="drumSet" id="snareSound" src="sounds/snare.wav"></audio>
-        </div>
-
-        <div class="key" onclick="playTink()">
-            <div>K</div>
-            <audio class="drumSet" id="tinkSound" src="sounds/tink.wav"></audio>
-        </div>
-
-        <div class="key" onclick="playTom()">
-            <div>L</div>
-            <audio class="drumSet" id="tomSound" src="sounds/tom.wav"></audio>
-        </div>
 
         
         
@@ -102,6 +111,10 @@
                 sound.play();
             }
         </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
     </body>
 
 </html>

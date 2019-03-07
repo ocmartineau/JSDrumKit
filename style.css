@@ -1,3 +1,14 @@
+
+
+
+.jumbotron-fluid {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    /*border: 1px dashed deeppink;*/
+}
+
 .key {
     display: inline-block;
     border: 1px solid black;
@@ -8,3 +19,8 @@
     margin-left: 15;
     margin-right: 15;
 }
+
+.key:active {
+    transform: scale(1.1);
+}
+
